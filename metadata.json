@@ -1,0 +1,5 @@
+{
+  "name": "EcoTrack Waste Management",
+  "description": "A comprehensive waste management application featuring a dashboard for analytics, an admin panel for managing households and collectors, and a collector view to track garbage collection with geolocation.",
+  "requestFramePermissions": []
+}
