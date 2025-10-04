@@ -48,7 +48,7 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
                 className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
-                placeholder="e.g., admin"
+                placeholder="Enter username"
                 required
                 />
             </div>
@@ -60,7 +60,7 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
-                placeholder="e.g., password123"
+                placeholder="Enter password"
                 required
                 />
             </div>
@@ -74,9 +74,9 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
             </button>
             </form>
         </div>
-        <div className="text-center mt-4 text-sm text-gray-500">
+        {/* <div className="text-center mt-4 text-sm text-gray-500">
             <p>Admin: admin / password123</p>
-            <p>Collector: mike / password123</p>
+            <p>Collector: mike / password123</p> */}
         </div>
       </div>
     </div>
