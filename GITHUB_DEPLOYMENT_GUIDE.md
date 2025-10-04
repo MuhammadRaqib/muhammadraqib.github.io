@@ -7,6 +7,8 @@
 2. Make it public (required for GitHub Pages)
 3. Initialize with README (optional)
 
+**Note:** For user/organization GitHub Pages (muhammadraqib.github.io), you can also use a repository named `muhammadraqib.github.io` if you want the app to be at the root of your GitHub Pages site.
+
 ### 2. Push Your Code
 ```bash
 git init
@@ -38,6 +40,27 @@ In your GitHub repository:
 1. Go to **Settings** > **Pages**
 2. Under **Source**, select **GitHub Actions**
 3. The deployment will start automatically
+
+### 5. Fix Repository Permission Issues
+If you get a permission error like:
+```
+remote: Permission to MuhammadRaqib/raqib_qayoom.github.io.git denied to github-actions[bot]
+```
+
+**Solution 1: Use the main workflow (recommended)**
+- The main workflow uses the newer GitHub Pages deployment method
+- It should work automatically with proper permissions
+
+**Solution 2: Use the alternative workflow**
+- Rename `.github/workflows/deploy.yml` to `.github/workflows/deploy-backup.yml`
+- Rename `.github/workflows/deploy-alternative.yml` to `.github/workflows/deploy.yml`
+- This uses the older but more compatible deployment method
+
+**Solution 3: Check repository settings**
+- Ensure your repository is public (required for GitHub Pages)
+- Go to **Settings** > **Actions** > **General**
+- Under **Workflow permissions**, select **Read and write permissions**
+- Check **Allow GitHub Actions to create and approve pull requests**
 
 ### 5. Configure Firebase Security Rules
 In your Firebase Console:
@@ -90,8 +113,13 @@ After deployment:
 
 Once deployed, your app will be available at:
 ```
-https://YOUR_USERNAME.github.io/ecotrack-waste-management/
+https://muhammadraqib.github.io/ecotrack-waste-management/
 ```
+
+**Note:** If you want the app to be at the root of your GitHub Pages site (https://muhammadraqib.github.io/), you can:
+1. Create a repository named `muhammadraqib.github.io`
+2. Deploy the code there
+3. The app will be available at the root URL
 
 ## 🔐 Default Login Credentials
 

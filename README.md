@@ -15,7 +15,7 @@ A comprehensive waste collection management system built with React, TypeScript,
 ## Quick Start
 
 ### Prerequisites
-- Node.js 18+ 
+- Node.js 20+ (required for Firebase v12+)
 - Firebase project
 - Git
 
@@ -56,7 +56,7 @@ This project is configured for automatic deployment to GitHub Pages. See [DEPLOY
 1. Push code to GitHub repository
 2. Set up Firebase secrets in GitHub repository settings
 3. Enable GitHub Pages with GitHub Actions
-4. Your app will be automatically deployed
+4. Your app will be automatically deployed to `https://muhammadraqib.github.io/ecotrack-waste-management/`
 
 ### Manual Deployment
 
